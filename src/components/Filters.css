@@ -1,0 +1,38 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filters button {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filters button:hover {
+  background-color: #444;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .filters {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filters input {
+    flex: 1;
+  }
+}
